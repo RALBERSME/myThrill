@@ -1,0 +1,141 @@
+body {
+  background-color: #4f4e68;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/31/15/34/cactus-2191647_640.jpg");
+}
+.book {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 18.5rem;
+  height: 12.5rem;
+  width: 55.5rem;
+  height: 37.5rem;
+  perspective: 70rem;
+}
+.cover {
+  background-color: #36354e;
+  background-color: #2fb488;
+  transform: rotateY(0deg);
+  width: 9.25rem;
+  height: 12.5rem;
+  width: 18.5rem;
+  height: 25rem;
+  width: 27.5rem;
+  height: 37rem;
+}
+.page {
+  top: 0.25rem;
+  left: 0.25rem;
+  background-color: #e9e6c4;
+  background-image: url("https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_640.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2022/05/17/09/40/woman-7202209_640.png");
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/23/01/04/books-2252739_640.jpg");
+  transform: rotateY(0deg);
+  width: 9rem;
+  height: 12rem;
+  width: 18rem;
+  height: 24rem;
+  width: 27rem;
+  height: 36rem;
+  text-align: right;
+  font-size: 8px;
+  font-size: 16px;
+  font-size: 24px;
+  color: #777;
+  font-family: monospace;
+}
+.page::before,
+.page::after {
+  display: block;
+  border-top: 1px dashed rgba(0, 0, 0, 0.3);
+  border-top: 5px dotted rgba(0, 0, 0, 0.3);
+  content: "Click me to read the thriller!";
+  padding-bottom: 1rem;
+  color: rgb(234, 232, 107);
+  font-weight: bold;
+}
+.cover,
+.page {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 3s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s;
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+}
+.page:nth-of-type(4) {
+  animation: bookOpen150deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.page:nth-of-type(5) {
+  animation: bookOpen30deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.page:nth-of-type(6) {
+  animation: bookOpen55deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    transform: rotateY(180deg);
+    z-index: 999;
+  }
+}
+@keyframes bookCover {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+}
+@keyframes bookOpen150deg {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    transform: rotateY(150deg);
+    z-index: 999;
+  }
+}
+@keyframes bookOpen55deg {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    transform: rotateY(55deg);
+    z-index: 999;
+  }
+}
+@keyframes bookOpen30deg {
+  50% {
+    z-index: 999;
+  }
+  100% {
+    transform: rotateY(30deg);
+    z-index: 999;
+  }
+}
