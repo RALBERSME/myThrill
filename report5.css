@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
 
-  background-color: #f3f2d1; /* #fdfce5;*/
+  background-color: #ffe4d6; /* #fdfce5;*/
   color: #4a403a;
   min-height: 100vh;
   padding-top: 5rem;
@@ -18,8 +18,8 @@ article {
   margin-right: auto;
   width: 90%;
   max-width: 800px;
-  border-top: 3px solid #a5dd9b; /* #f9975d;*/
-  border-bottom: 3px solid #a5dd9b; /* #f9975d;*/
+  border-top: 3px solid #d988b9; /* #f9975d;*/
+  border-bottom: 3px solid #d988b9; /* #f9975d;*/
   padding: 3rem 0;
 }
 header {
@@ -32,9 +32,9 @@ header {
   font-family: Georgia, serif;
 }
 header:after {
-  content: "2";
+  content: "4";
   font-size: 10em;
-  color: rgba(76, 205, 153, 0.3); /*rgba(249, 151, 93, 0.25);*/
+  color: rgba(176, 87, 141, 0.3); /*rgba(249, 151, 93, 0.25);*/
   position: absolute;
   z-index: -1;
   line-height: 0.75;
@@ -69,8 +69,8 @@ section p:first-child {
 }
 button {
   padding: 2rem;
-  background-color: rgba(76, 205, 153, 0.6);
-  color: #f3f2d1;
+  background-color: rgba(217, 136, 185, 0.7);
+  color: #ffe4d6;
   cursor: pointer;
   font-size: 1.5rem;
   font-family: Georgia, serif;
@@ -78,12 +78,11 @@ button {
   border-radius: 5px;
   font-weight: 700;
   width: 100%;
-  border-color: #f3f2d1;
 }
 button:hover {
-  background-color: rgba(135, 219, 120, 1);
-  color: #f3f2d1;
-  border-color: rgba(76, 205, 153, 0.6);
+  background-color: #fbdbcb;
+  color: #d988b9;
+  border-color: #d988b9;
 }
 .footer {
   text-align: center;
