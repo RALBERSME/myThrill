@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  min-height: 100vh;
+  background: black;
+}
+h3 {
+  margin: 15px;
+  font-size: 2.75rem;
+}
+.container {
+  margin-top: 25%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.scan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scan .fingerprint {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: url("https://cdn.pixabay.com/photo/2017/01/19/09/12/icon-steps-1991841_640.png");
+  background-size: 300px;
+}
+.scan .fingerprint::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2017/04/26/21/04/hand-print-2263761_640.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+.scan .fingerprint::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #f02137;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 20px #f02137) drop-shadow(0 0 60px #f02137);
+  animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+}
+.scan h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #f02137;
+  filter: drop-shadow(0 0 20px #f02137) drop-shadow(0 0 60px #f02137);
+  animation: animate_text 0.5s steps(1) infinite;
+}
+@keyframes animate_text {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.message {
+  color: #f02137;
+  position: relative;
+}
+.container {
+  margin-top: 25%;
+  margin-left: 60%;
+  color: #f02137;
+  justify-content: left;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/31/21/34/cartoon-1296508_640.png");
+}
+.text {
+  position: absolute;
+  top: 50%;
+  padding: 25px;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
