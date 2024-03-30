@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgba(230, 212, 212, 0.4);
-  background-image: url("https://cdn.pixabay.com/photo/2016/07/04/22/40/dachshund-1497662_640.jpg");
+  background-image: url("hundeschnipsel.jpg");
   background-size: 480px;
 }
 
@@ -69,7 +69,7 @@ body {
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 1;
-  background-image: url(https://cdn.pixabay.com/photo/2020/11/29/08/07/girl-5786821_640.jpg);
+
   background-image: url("");
   background-size: 480px;
 }
@@ -173,8 +173,8 @@ body {
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
   width: 285px;
   height: 388px;
-  background-image: url(https://cdn.pixabay.com/photo/2019/08/19/12/32/portrait-4416308_640.jpg);
-  background-image: url("https://cdn.pixabay.com/photo/2016/08/17/16/21/presentation-1600942_640.png");
+
+  background-image: url("presentationboard.jpg");
   overflow: hidden;
 }
 
