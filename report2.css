@@ -87,3 +87,7 @@ button:hover {
 .footer {
   text-align: center;
 }
+#english:hover {
+  cursor: pointer;
+  color: #da58a6;
+}
